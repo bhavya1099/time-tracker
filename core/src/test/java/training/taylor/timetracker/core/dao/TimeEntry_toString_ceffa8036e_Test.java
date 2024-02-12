@@ -44,6 +44,8 @@ package training.taylor.timetracker.core.dao;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Scope;
 
 @Component
 @Scope("test")
