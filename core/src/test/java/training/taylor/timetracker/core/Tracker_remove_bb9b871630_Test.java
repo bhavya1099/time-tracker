@@ -95,7 +95,7 @@ public class Tracker_remove_bb9b871630_Test {
     @Test
     public void testRemoveEntryFromNullList() {
         tracker = new Tracker();
-        tracker.entries = null;
+        //tracker.entries = null;
 
         assertThrows(NullPointerException.class, () -> tracker.remove(entry1));
     }

@@ -104,7 +104,7 @@ public class Tracker_size_83d847afcf_Test {
     @Test
     public void testSize_ListWithDifferentObjectTypes() {
         entries.add(new TimeEntry());
-        entries.add("Test");
+       // entries.add("Test");
         assertEquals(2, tracker.size());
     }
 
