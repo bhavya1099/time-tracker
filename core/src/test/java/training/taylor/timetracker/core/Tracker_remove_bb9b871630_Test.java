@@ -53,11 +53,11 @@ public class Tracker_remove_bb9b871630_Test {
 
     private Tracker tracker;
 
-    @Before
-    public void setup() {
-        MockitoAnnotations.initMocks(this);
-        tracker = new Tracker(entries);
-    }
+    // @Before
+    // public void setup() {
+    //     MockitoAnnotations.initMocks(this);
+    //     tracker = new Tracker(entries);
+    // }
 
     @Test
     public void testRemoveExistingEntry() {

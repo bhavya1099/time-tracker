@@ -79,7 +79,7 @@ public class Tracker_add_7d27642e21_Test {
     // TODO: Update the max size as per your list's max size
     @Test(expected = IndexOutOfBoundsException.class)
     public void testAddTimeEntryInFullList() {
-        for (int i = 0; i < maxSize + 1; i++) {
+        for (int i = 0; i < 100 + 1; i++) {
             tracker.add(entry);
         }
     }
