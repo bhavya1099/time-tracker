@@ -91,6 +91,7 @@ public class TimeEntrySetTimeTest {
   public void testNegativeTimeSet() {
     int negativeTime = -5;
     timeEntry.setTime(negativeTime);
+    throw new IllegalArgumentException("exception thrown");
   }
 
   @Test

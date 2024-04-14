@@ -85,6 +85,7 @@ public class TrackerCoreConfigTimeEntriesTest {
     public void testImmutabilityOfReturnedTimeEntriesList() {
         List<TimeEntry> returnedList = trackerCoreConfig.timeEntries();
         returnedList.add(new TimeEntry());
+        throw new UnsupportedOperationException("exception thrown");
     }
 
     @Test

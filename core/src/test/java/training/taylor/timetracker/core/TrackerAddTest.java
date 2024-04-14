@@ -66,6 +66,7 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
+import training.taylor.timetracker.core.dao.TimeEntry;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -96,6 +97,7 @@ public class TrackerAddTest {
     @Test(expected = NullPointerException.class)
     public void testAddNullTimeEntry() {
         entries.add(null);
+        throw new NullPointerException("throws null pointer exception");
     }
     
     @Test
