@@ -80,6 +80,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
+import training.taylor.timetracker.core.dao.TimeEntry;
 
 import java.util.Arrays;
 import java.util.List;

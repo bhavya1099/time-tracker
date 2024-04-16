@@ -79,9 +79,10 @@ package training.taylor.timetracker.core.dao;
 
 import org.junit.Test;
 import org.junit.Assert;
+import org.junit.Before;
 
-@Component
-@Scope("prototype")
+// @Component
+// @Scope("prototype")
 public class TimeEntrySetTimeTest {
 
     private TimeEntry testEntry;

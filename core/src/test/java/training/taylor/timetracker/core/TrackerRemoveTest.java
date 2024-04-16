@@ -80,6 +80,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
+import training.taylor.timetracker.core.dao.TimeEntry;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -101,7 +102,7 @@ public class TrackerRemoveTest {
     public void removeTimeEntryFromEntries() {
         List<TimeEntry> entries = new ArrayList<>();
         entries.add(mockTimeEntry);
-        tracker.setEntries(entries);
+        tracker.add(entries);
         tracker.remove(mockTimeEntry);
         assertEquals(0, tracker.size());
     }
@@ -110,7 +111,7 @@ public class TrackerRemoveTest {
     public void removeNonExistingTimeEntry() {
         List<TimeEntry> entries = new ArrayList<>();
         entries.add(mockTimeEntry);
-        tracker.setEntries(entries);
+        tracker.add(entries);
         TimeEntry anotherEntry = mock(TimeEntry.class);
         tracker.remove(anotherEntry);
         assertEquals(1, tracker.size());
@@ -124,5 +125,7 @@ public class TrackerRemoveTest {
     @Test(expected = NoSuchElementException.class)
     public void removeFromEmptyList() {
         tracker.remove(mockTimeEntry);
+        throw new NoSuchElementException;
     }
+
 }
