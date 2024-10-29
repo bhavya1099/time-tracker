@@ -1,0 +1,3 @@
+cluster_id,topic_name,partition_id
+"""cluster1""","""topic1""","1"
+"""cluster2""","""topic2""","2"
