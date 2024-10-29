@@ -1,0 +1,11 @@
+cluster_id^|^AdditionalCSVvaluInfo^|^topic_name^|^partition_id^|^headers^|^key^|^type^|^data^|^value^|^timestamp^|^statusCode
+cluster_1^|^{"binary_and_json":{"description":"If using type, one of \"BINARY\",\"JSON\" or \"STRING\" is required.","value":{"partition_id":1,"headers":[{"name":"Header-1","value":"SGVhZGVyLTE="},{"name":"Header-2","value":"SGVhZGVyLTI="}],"key":{"type":"BINARY","data":"Zm9vYmFy"},"value":{"type":"JSON","data":{"foo":"bar"}},"timestamp":"2021-02-05T19:14:42Z"}}}^|^topic1^|^1^|^[]^|^{}^|^string^|^{}^|^{}^|^2021-02-05T19:14:42Z^|^200
+cluster_2^|^{"string":{"description":"If using type, one of \"BINARY\",\"JSON\" or \"STRING\" is required.","value":{"value":{"type":"STRING","data":"My message"}}}}^|^topic2^|^2^|^[]^|^{}^|^string^|^{}^|^{}^|^2021-02-05T19:14:42Z^|^400
+cluster_3^|^{"empty_value":{"description":"key or value can be omitted entirely.","value":{"key":{"data":1000}}}}^|^topic3^|^3^|^[]^|^{}^|^string^|^{}^|^{}^|^2021-02-05T19:14:42Z^|^401
+cluster_4^|^{}^|^topic4^|^4^|^[]^|^{}^|^string^|^{}^|^{}^|^2021-02-05T19:14:42Z^|^403
+cluster_5^|^{}^|^topic5^|^5^|^[]^|^{}^|^string^|^{}^|^{}^|^2021-02-05T19:14:42Z^|^404
+cluster_6^|^{}^|^topic6^|^6^|^[]^|^{}^|^string^|^{}^|^{}^|^2021-02-05T19:14:42Z^|^413
+cluster_7^|^{}^|^topic7^|^7^|^[]^|^{}^|^string^|^{}^|^{}^|^2021-02-05T19:14:42Z^|^415
+cluster_8^|^{}^|^topic8^|^8^|^[]^|^{}^|^string^|^{}^|^{}^|^2021-02-05T19:14:42Z^|^422
+cluster_9^|^{}^|^topic9^|^9^|^[]^|^{}^|^string^|^{}^|^{}^|^2021-02-05T19:14:42Z^|^429
+cluster_10^|^{}^|^topic10^|^10^|^[]^|^{}^|^string^|^{}^|^{}^|^2021-02-05T19:14:42Z^|^5XX
